@@ -17,5 +17,4 @@ Man kann daten auf den Knoten und Kanten speichern.
 Es ist basiert auf Relationships.
 Wird gebraucht für Social Media Anwendungen oder Zugverbindungen.
 ### Document
-Einfach für Umfragen
 
