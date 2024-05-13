@@ -5,6 +5,7 @@ Wir verwendet für Analyse, denn man kann schneller auf einzelne Spalten zugreif
 Die Datenbank besteht aus einzelnen Tabellen mit nur einer Column.
 ### Column-families
 Wie eine 2 dimensionale key/value Datenbank. Keys beinhalten andere Keys.
+Das lesen von Daten ist sehr schnell, aber enthält viel Redundanz.
 ### Key-Value
 JSON-Struktur (links key, rechts value)
 Sehr schnelles Abfragen von Daten wenn man nach dem Key sucht. Wenn man nach dem Inhalt des Values filtern möchte ist es sehr langsam.
