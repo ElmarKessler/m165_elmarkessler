@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "665db3058070e6f2b76b0667"
+  },
+  "name": "Jack",
+  "alter": 20,
+  "größe": 180,
+  "adresse": "Mainstreet 123, 12345 Tilted Towers",
+  "gewicht": 75,
+  "geburtsdatum": {
+    "$date": "1994-05-20T00:00:00.000Z"
+  }
+}]
