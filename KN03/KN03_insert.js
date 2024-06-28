@@ -1,4 +1,4 @@
-use buchclubDB;
+use BuchClubDB;
 
 var member1Id = new ObjectId();
 var member2Id = new ObjectId();
