@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-07-01T13:26:08.978Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="2CtEe7HvYdF46vsfVxKR" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-07-01T13:31:22.200Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="eF-E2CY-VvB-cAPwpVfE" version="24.6.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="899" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="436" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -19,6 +19,11 @@
             <mxPoint x="140" y="540" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="sBmKQmKqbCq0UchzTpwj-3" value="Contains books&lt;div&gt;UUID: BookId&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3YOhsPJnXROdofjHF5Tx-6">
+          <mxGeometry x="-0.1403" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="3YOhsPJnXROdofjHF5Tx-10" value="Review" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="475" y="130" width="80" height="80" as="geometry" />
         </mxCell>
@@ -26,6 +31,11 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="120" y="400" as="sourcePoint" />
             <mxPoint x="231.72000000000003" y="358.28" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sBmKQmKqbCq0UchzTpwj-2" value="Are read from&lt;div&gt;UUID: MemberID&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="3YOhsPJnXROdofjHF5Tx-14">
+          <mxGeometry x="-0.2494" y="2" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3YOhsPJnXROdofjHF5Tx-16" value="_id: ObjectId()&lt;br&gt;name: String&lt;br&gt;gender: String&lt;br&gt;age: int&lt;div&gt;book: array&amp;lt;BookId&amp;gt;&lt;br&gt;&lt;div&gt;review: array&amp;lt;ReviewId&amp;gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -44,6 +54,22 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="510" as="sourcePoint" />
             <mxPoint x="480" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sBmKQmKqbCq0UchzTpwj-1" value="Write&lt;div&gt;UUID: ReviewId&amp;nbsp;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sBmKQmKqbCq0UchzTpwj-0">
+          <mxGeometry x="-0.4831" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sBmKQmKqbCq0UchzTpwj-4" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3YOhsPJnXROdofjHF5Tx-3" target="3YOhsPJnXROdofjHF5Tx-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="400" as="sourcePoint" />
+            <mxPoint x="340" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sBmKQmKqbCq0UchzTpwj-5" value="has a&lt;div&gt;UUID: ReviewId&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sBmKQmKqbCq0UchzTpwj-4">
+          <mxGeometry x="-0.0714" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
