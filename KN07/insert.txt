@@ -1,0 +1,93 @@
+CREATE
+  (member1:Member {
+    _id: 1, 
+    name: 'Alice', 
+    gender: 'Female', 
+    age: 30, 
+    book: [], 
+    review: []
+  }),
+  (member2:Member {
+    _id: 2, 
+    name: 'Bob', 
+    gender: 'Male', 
+    age: 25, 
+    book: [], 
+    review: []
+  }),
+  (member3:Member {
+    _id: 3, 
+    name: 'Carol', 
+    gender: 'Female', 
+    age: 35, 
+    book: [], 
+    review: []
+  }),
+
+  (book1:Book {
+    _id: 101, 
+    title: 'Book One', 
+    author: 'Author A', 
+    pages: 300, 
+    review: []
+  }),
+  (book2:Book {
+    _id: 102, 
+    title: 'Book Two', 
+    author: 'Author B', 
+    pages: 250, 
+    review: []
+  }),
+  (book3:Book {
+    _id: 103, 
+    title: 'Book Three', 
+    author: 'Author C', 
+    pages: 400, 
+    review: []
+  }),
+
+  (review1:Review {
+    _id: 1001, 
+    rating: 5, 
+    positives: 'Great book!', 
+    negatives: 'None'
+  }),
+  (review2:Review {
+    _id: 1002, 
+    rating: 3, 
+    positives: 'Interesting read', 
+    negatives: 'Slow start'
+  }),
+  (review3:Review {
+    _id: 1003, 
+    rating: 4, 
+    positives: 'Well written', 
+    negatives: 'Too long'
+  }),
+
+  (readinglist1:Readinglist {
+    _id: 201, 
+    bookcount: 2, 
+    recentBook: [101, 102]
+  }),
+  (readinglist2:Readinglist {
+    _id: 202, 
+    bookcount: 1, 
+    recentBook: [103]
+  }),
+
+  (member1)-[:WRITE]->(review1),
+  (member2)-[:WRITE]->(review2),
+  (member3)-[:WRITE]->(review3),
+
+  (member1)-[:READ]->(book1),
+  (member2)-[:READ]->(book2),
+  (member3)-[:READ]->(book3),
+
+  (book1)-[:HAS]->(review1),
+  (book2)-[:HAS]->(review2),
+  (book3)-[:HAS]->(review3),
+
+  (readinglist1)-[:HAS]->(book1),
+  (readinglist1)-[:HAS]->(book2),
+  (readinglist2)-[:HAS]->(book3);
