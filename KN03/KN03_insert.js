@@ -4,17 +4,11 @@ var member3Id = new ObjectId();
 var member4Id = new ObjectId();
 var member5Id = new ObjectId();
 
-var meeting1Id = new ObjectId();
-var meeting2Id = new ObjectId();
-var meeting3Id = new ObjectId();
-
 var readinglist1Id = new ObjectId();
 
 var book1Id = new ObjectId();
 var book2Id = new ObjectId();
 var book3Id = new ObjectId();
-var book4Id = new ObjectId();
-var book5Id = new ObjectId();
 
 var review1Id = new ObjectId();
 var review2Id = new ObjectId();
@@ -28,6 +22,10 @@ db.member.insertMany([
     { _id: member5Id, name: "Edward", gender: "male", age: 26 }
 ]);
 
+<<<<<<< HEAD
+db.readinglist.insertOne([
+    { _id: readinglist1Id, bookcount: 10, recentBook: "Recent Book 1" }
+=======
 db.meeting.insertMany([
     { _id: meeting1Id, date: new Date("2023-06-15"), bookToDiscuss: "Book A", duration: 1.5, attendees: 5 },
     { _id: meeting2Id, date: new Date("2023-07-20"), bookToDiscuss: "Book B", duration: 2.0, attendees: 4 },
@@ -36,34 +34,47 @@ db.meeting.insertMany([
 
 db.readinglist.insertMany([
     { _id: readinglist1Id, bookcount: 10, recentBook: "Recent Book 1" },
+>>>>>>> 807751f341f17f5d06e869beaa5259c77c72bf30
 ]);
 
 db.book.insertMany([
-    { _id: book1Id, author: "Author 1", pages: 300 },
-    { _id: book2Id, author: "Author 2", pages: 250 },
-    { _id: book3Id, author: "Author 3", pages: 400 },
-    { _id: book4Id, author: "Author 4", pages: 320 },
-    { _id: book5Id, author: "Author 5", pages: 280 }
-]);
-
-db.review.insertOne({
-    _id: review1Id,
-    rating: 4,
-    positives: "Great character development",
-    negatives: "Slow start"
-});
-
-db.review.insertMany([
-    {
-        _id: review2Id,
-        rating: 5,
-        positives: "Engaging plot",
-        negatives: "None"
+    { 
+        _id: book1Id, 
+        author: "Author 1", 
+        pages: 300, 
+        reviews: [
+            {
+                _id: review1Id,
+                rating: 4,
+                positives: "Great character development",
+                negatives: "Slow start"
+            }
+        ]
     },
-    {
-        _id: review3Id,
-        rating: 3,
-        positives: "Interesting themes",
-        negatives: "Underdeveloped characters"
+    { 
+        _id: book2Id, 
+        author: "Author 2", 
+        pages: 250, 
+        reviews: [
+            {
+                _id: review2Id,
+                rating: 3,
+                positives: "Interesting themes",
+                negatives: "Underdeveloped characters"
+            }
+        ]
+    },
+        { 
+        _id: book3Id, 
+        author: "Author 3", 
+        pages: 233, 
+        reviews: [
+            {
+                _id: review3Id,
+                rating: 3,
+                positives: "Interesting themes",
+                negatives: "Bad plot"
+            }
+        ]
     }
 ]);
