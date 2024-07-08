@@ -22,10 +22,9 @@ db.member.insertMany([
     { _id: member5Id, name: "Edward", gender: "male", age: 26 }
 ]);
 
-<<<<<<< HEAD
 db.readinglist.insertOne([
     { _id: readinglist1Id, bookcount: 10, recentBook: "Recent Book 1" }
-=======
+
 db.meeting.insertMany([
     { _id: meeting1Id, date: new Date("2023-06-15"), bookToDiscuss: "Book A", duration: 1.5, attendees: 5 },
     { _id: meeting2Id, date: new Date("2023-07-20"), bookToDiscuss: "Book B", duration: 2.0, attendees: 4 },
@@ -34,7 +33,6 @@ db.meeting.insertMany([
 
 db.readinglist.insertMany([
     { _id: readinglist1Id, bookcount: 10, recentBook: "Recent Book 1" },
->>>>>>> 807751f341f17f5d06e869beaa5259c77c72bf30
 ]);
 
 db.book.insertMany([
