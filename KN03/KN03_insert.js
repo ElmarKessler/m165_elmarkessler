@@ -7,14 +7,10 @@ var member4Id = new ObjectId();
 var member5Id = new ObjectId();
 
 var readinglist1Id = new ObjectId();
-var readinglist2Id = new ObjectId();
-var readinglist3Id = new ObjectId();
 
 var book1Id = new ObjectId();
 var book2Id = new ObjectId();
 var book3Id = new ObjectId();
-var book4Id = new ObjectId();
-var book5Id = new ObjectId();
 
 var review1Id = new ObjectId();
 var review2Id = new ObjectId();
@@ -28,10 +24,8 @@ db.member.insertMany([
     { _id: member5Id, name: "Edward", gender: "male", age: 26 }
 ]);
 
-db.readinglist.insertMany([
-    { _id: readinglist1Id, bookcount: 10, recentBook: "Recent Book 1" },
-    { _id: readinglist2Id, bookcount: 12, recentBook: "Recent Book 2" },
-    { _id: readinglist3Id, bookcount: 15, recentBook: "Recent Book 3" }
+db.readinglist.insertOne([
+    { _id: readinglist1Id, bookcount: 10, recentBook: "Recent Book 1" }
 ]);
 
 db.book.insertMany([
@@ -73,26 +67,5 @@ db.book.insertMany([
                 negatives: "Bad plot"
             }
         ]
-    }
-]);
-db.review.insertOne({
-    _id: review1Id,
-    rating: 4,
-    positives: "Great character development",
-    negatives: "Slow start"
-});
-
-db.review.insertMany([
-    {
-        _id: review2Id,
-        rating: 5,
-        positives: "Engaging plot",
-        negatives: "None"
-    },
-    {
-        _id: review3Id,
-        rating: 3,
-        positives: "Interesting themes",
-        negatives: "Underdeveloped characters"
     }
 ]);
