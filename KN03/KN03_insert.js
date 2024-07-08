@@ -24,9 +24,11 @@ db.member.insertMany([
     { _id: member5Id, name: "Edward", gender: "male", age: 26 }
 ]);
 
-db.readinglist.insertOne([
-    { _id: readinglist1Id, bookcount: 10, recentBook: "Recent Book 1" }
-]);
+db.readinglist.insertOne({
+    _id: readinglist1Id, 
+    bookcount: 10, 
+    recentBook: "Recent Book 1"
+});
 
 db.book.insertMany([
     { 
@@ -55,7 +57,7 @@ db.book.insertMany([
             }
         ]
     },
-        { 
+    { 
         _id: book3Id, 
         author: "Author 3", 
         pages: 233, 
@@ -69,3 +71,5 @@ db.book.insertMany([
         ]
     }
 ]);
+
+print("Data inserted successfully into member, book, review, and readinglist collections.");
