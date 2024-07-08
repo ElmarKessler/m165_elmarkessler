@@ -35,13 +35,46 @@ db.readinglist.insertMany([
 ]);
 
 db.book.insertMany([
-    { _id: book1Id, author: "Author 1", pages: 300 },
-    { _id: book2Id, author: "Author 2", pages: 250 },
-    { _id: book3Id, author: "Author 3", pages: 400 },
-    { _id: book4Id, author: "Author 4", pages: 320 },
-    { _id: book5Id, author: "Author 5", pages: 280 }
+    { 
+        _id: book1Id, 
+        author: "Author 1", 
+        pages: 300, 
+        reviews: [
+            {
+                _id: review1Id,
+                rating: 4,
+                positives: "Great character development",
+                negatives: "Slow start"
+            }
+        ]
+    },
+    { 
+        _id: book2Id, 
+        author: "Author 2", 
+        pages: 250, 
+        reviews: [
+            {
+                _id: review2Id,
+                rating: 3,
+                positives: "Interesting themes",
+                negatives: "Underdeveloped characters"
+            }
+        ]
+    },
+        { 
+        _id: book3Id, 
+        author: "Author 3", 
+        pages: 233, 
+        reviews: [
+            {
+                _id: review3Id,
+                rating: 3,
+                positives: "Interesting themes",
+                negatives: "Bad plot"
+            }
+        ]
+    }
 ]);
-
 db.review.insertOne({
     _id: review1Id,
     rating: 4,
