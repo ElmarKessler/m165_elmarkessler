@@ -6,10 +6,6 @@ var member3Id = new ObjectId();
 var member4Id = new ObjectId();
 var member5Id = new ObjectId();
 
-var meeting1Id = new ObjectId();
-var meeting2Id = new ObjectId();
-var meeting3Id = new ObjectId();
-
 var readinglist1Id = new ObjectId();
 var readinglist2Id = new ObjectId();
 var readinglist3Id = new ObjectId();
@@ -30,12 +26,6 @@ db.member.insertMany([
     { _id: member3Id, name: "Charlie", gender: "male", age: 24 },
     { _id: member4Id, name: "Diana", gender: "female", age: 30 },
     { _id: member5Id, name: "Edward", gender: "male", age: 26 }
-]);
-
-db.meeting.insertMany([
-    { _id: meeting1Id, date: new Date("2023-06-15"), bookToDiscuss: "Book A", duration: 1.5, attendees: 5 },
-    { _id: meeting2Id, date: new Date("2023-07-20"), bookToDiscuss: "Book B", duration: 2.0, attendees: 4 },
-    { _id: meeting3Id, date: new Date("2023-08-10"), bookToDiscuss: "Book C", duration: 1.0, attendees: 6 }
 ]);
 
 db.readinglist.insertMany([
